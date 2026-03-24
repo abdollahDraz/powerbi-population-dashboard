@@ -146,8 +146,7 @@ report/population_dashboard.pbix
 
 ## 👨‍💻 Author
 
-**Mohamed**
-Computer Engineering Student
+** Abdollah Mohammed Deraz ""
 
 ---
 
