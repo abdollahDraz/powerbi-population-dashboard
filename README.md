@@ -2,62 +2,71 @@
 
 ## 🚀 Project Overview
 
-This project presents a **professional end-to-end data analysis solution** using Power BI.
+This project is a **complete data analysis pipeline** that transforms raw population data into a professional and interactive Power BI dashboard.
 
-It starts from **data collection (Web Scraping)** from Wikipedia and ends with a fully interactive dashboard that provides insights into global population distribution and trends.
+The project covers:
+
+* Data collection (Web Scraping)
+* Data cleaning
+* Data modeling (DAX)
+* Data visualization (Dashboard)
 
 ---
 
-## 🧩 Project Workflow
-
-### 1️⃣ Data Collection (Web Scraping)
+## 🌐 Data Source
 
 * Source: Wikipedia
-* Tool: Python (BeautifulSoup + Requests)
-* Script: `scripts/scraping.py`
-
-👉 The script extracts:
-
-* Country
-* Population
-* Percentage
-* Date
+* Dataset: List of countries and dependencies by population
+* Method: Web Scraping using Python
 
 ---
 
-### 2️⃣ Data Processing
+## 🧩 Data Collection (Python)
 
-* Cleaned using Power Query
-* Converted Percentage to proper format
-* Created calculated columns & measures
+The dataset was collected using a Python script located in:
+
+```
+scripts/scraping.py
+```
+
+### 🔧 Tools Used:
+
+* requests
+* BeautifulSoup
+* pandas
+
+### ⚙️ Process:
+
+* Send HTTP request
+* Parse HTML content
+* Extract table data
+* Clean and store as CSV
 
 ---
 
-### 3️⃣ Data Modeling (DAX)
+## 🧹 Data Processing (Power BI - Power Query)
 
-Key measures used:
+* Cleaned raw data
+* Converted data types
+* Fixed percentage format
+* Handled missing values
+
+---
+
+## 🧠 Data Modeling (DAX)
+
+### Key Measures:
 
 * Total Population
 * Average Population
-* Max / Min Population
-* Population % Contribution
-* Ranking (Top Countries)
+* Max Population
+* Min Population
+* Population Percentage Contribution
+* Ranking by Population
 
 ---
 
-### 4️⃣ Data Visualization
-
-Built using Power BI with:
-
-* KPI Cards
-* Bar Charts
-* Pie / Donut Charts
-* Line Charts
-* Slicers (Date Filters)
-
----
-
-## 📈 Dashboard Pages
+## 📊 Dashboard Pages
 
 ---
 
@@ -67,12 +76,10 @@ Built using Power BI with:
 
 #### 🔹 Features:
 
-* Total Population KPI
-* Average Population
-* Max / Min Population
+* KPI Cards (Total, Avg, Max, Min)
 * Top 10 Countries by Population
 * Population Distribution (Donut Chart)
-* Date Filter
+* Interactive Date Filter
 
 ---
 
@@ -83,19 +90,9 @@ Built using Power BI with:
 #### 🔹 Features:
 
 * Population Trend Over Time 📈
-* Top vs Least Countries Comparison
-* Advanced Filtering by Date
-* Detailed Country Analysis
-
----
-
-## 🛠️ Tools & Technologies
-
-* **Power BI** → Dashboard & Visualization
-* **Python** → Web Scraping
-* **Pandas** → Data Handling
-* **BeautifulSoup** → HTML Parsing
-* **DAX** → Data Modeling
+* Top vs Least Populated Countries
+* Comparative Analysis
+* Dynamic Filtering
 
 ---
 
@@ -104,34 +101,62 @@ Built using Power BI with:
 ```
 powerbi-population-dashboard/
 │
-├── data/        # Dataset (CSV)
-├── report/      # Power BI file (.pbix)
-├── assets/      # Dashboard screenshots
-├── scripts/     # Web scraping script
+├── assets/        # Dashboard screenshots
+├── data/          # Dataset (CSV)
+├── docs/          # Documentation
+├── report/        # Power BI file (.pbix)
+├── scripts/       # Web scraping script
 ├── README.md
 ```
 
 ---
 
+## 🛠️ Tools & Technologies
+
+* Power BI
+* Python
+* Pandas
+* BeautifulSoup
+* DAX
+
+---
+
 ## 💡 Key Insights
 
-* Identify the most populated countries globally
-* Understand population distribution (%)
-* Analyze trends over time
-* Compare top vs least populated countries
+* India and China are the most populated countries
+* Population distribution is highly concentrated
+* Clear trends over time using interactive filtering
 
 ---
 
+## ▶️ How to Run
 
+### 1️⃣ Install requirements:
+
+```
+pip install -r scripts/requirements.txt
+```
+
+### 2️⃣ Run scraping script:
+
+```
+python scripts/scraping.py
+```
+
+### 3️⃣ Open Power BI file:
+
+```
+report/Web_Scrapping_Population_Countaries.pbix
+```
 
 ---
 
-## 👨‍💻 Author
+## 👨‍💻 Project Owner
 
-** Abdollah Mohammed Deraz ""
+**Abdollah Mohammed Draz**
 
 ---
 
 ## ⭐ Support
 
-If you like this project, consider giving it a ⭐ on GitHub!
+If you like this project, give it a ⭐ on GitHub!
