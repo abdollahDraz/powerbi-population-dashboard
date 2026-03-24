@@ -122,25 +122,7 @@ powerbi-population-dashboard/
 
 ---
 
-## ▶️ How to Run
 
-### 1️⃣ Install dependencies:
-
-```
-pip install -r scripts/requirements.txt
-```
-
-### 2️⃣ Run scraping script:
-
-```
-python scripts/scraping.py
-```
-
-### 3️⃣ Open Power BI file:
-
-```
-report/population_dashboard.pbix
-```
 
 ---
 
